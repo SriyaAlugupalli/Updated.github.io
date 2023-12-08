@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="color-scheme" content="light dark">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Set text color to a darker shade */
+            background-color: #fff; /* Set background color to a lighter shade */
+        }
+
+        pre {
+            word-wrap: break-word;
+            white-space: pre-wrap;
+            padding: 10px;
+            background-color: #f7f7f7; /* Set a light background color for better contrast */
+            border: 1px solid #ddd; /* Add a border for better visibility */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Furniture Shop Sale</h1>
+        <p>Discover Great Deals on Quality Furniture</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="main-section">
+        <div class="background-image">
+            <!-- Background image for the home section -->
+        </div>
+        <h2>Exclusive Furniture Sale</h2>
+        <p>Save big on our handpicked selection of furniture items.</p>
+        <button onclick="showVideo()">Watch Sale Highlights</button>
+        <video id="saleVideo" width="640" height="360" controls>
+            <source src="sale-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="products" class="main-section">
+        <h2>Featured Products on Sale</h2>
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h3>Comfortable Sofa</h3>
+            <p>Now $599 <del>$799</del></p>
+            <button onclick="addToCart('Comfortable Sofa')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h3>Elegant Dining Table</h3>
+            <p>Now $899 <del>$1099</del></p>
+            <button onclick="addToCart('Elegant Dining Table')">Add to Cart</button>
+        </div>
+
+        <!-- Add more products as needed -->
+    </section>
+
+    <section id="about" class="main-section">
+        <h2>About Our Furniture Shop</h2>
+        <p>Explore our commitment to quality and craftsmanship.</p>
+        <!-- Add text descriptions and images about the furniture shop here -->
+    </section>
+
+    <section id="contact" class="main-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to inquire about a product?</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Our Furniture Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
